@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Creación de un Formulario</title>
+    <style>
+        form {
+            width: 500px;
+            /*background: silver;*/
+            padding: 20px;
+            border: 2px solid black;
+            margin: 0 auto;
+            
+        }
+        
+        input[type='text'] , input[type='password'], select {
+            width: 380px;
+            height: 20px;
+            border-bottom: 1px silver solid;
+            outline: none;
+        }
+        
+        textarea {
+            resize: none;
+            border:  1px solid black;
+            
+        }
+        
+        input[type='submit'] {
+            background: brown;
+            color: white;
+            border: 1px solid black;
+            width: 380px;
+            height: 25px;
+        }
+        
+        input[type='text']:focus {
+            background: lightgreen;
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    
+    <!--<form action="">
+        <label for="user">Username</label>
+        <input type="text" id="user"> 
+    </form> <br>-->
+
+    <form action="">
+    <h2>Completar el Formulario</h2><hr>
+       <table>
+           <tr>
+               <td>
+                    <label for="user">Username</label>
+                    <input type="text" id="user" name="user"> 
+               </td>           
+           </tr>
+           
+           <tr>
+               <td>
+                    <label for="pass">Password </label>
+                    <input type="password" id="pass" name="pass"> 
+               </td>
+           </tr>
+           
+           <tr>
+               <td><label>Gender: </label> Male: <input type="radio" name="gender" > | Female: <input type="radio" name="gender"></td>
+           </tr>
+           
+           <tr>
+               <td><label>Skills: </label> HTML: <input type="checkbox" name="HTML"> | CSS: <input type="checkbox" name="CSS"></td>
+           </tr>
+           
+           <tr>
+               <td>
+                  <label for="country">Select your country: </label> 
+                   <select id="country" name="country">
+                       <option value="" >Select your country</option>
+                       <option value="">Peru</option>
+                       <option value="">Brazil</option>
+                       <option value="">Argentina</option>
+                   </select>    
+               </td>
+           </tr>
+           
+           <tr>
+               
+               <td><textarea name="" id="" cols="60" rows="10"></textarea></td>
+               
+           </tr>
+           
+           <tr>
+               <td>    
+                   <input type="submit" value="click tu submit" name="submit_form">
+               </td>
+           </tr>
+           
+       </table>
+    </form> 
+    
+</body>
+</html>
